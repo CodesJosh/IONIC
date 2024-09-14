@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"> </ion-back-button>
+  </ion-buttons>
+
+   
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div>
+    <img class="logo" src="assets/img/Duber.png" alt="LogoDuber">
+  </div>
+  
+<ion-item class="Recuperar">
+  <ion-input [(ngModel)]="email" label="Email: " type="email" placeholder="Email"></ion-input>
+</ion-item>
+<br>
+<ion-button class="boton" (click)="recuperar()" expand="block">Recuperar</ion-button>
+
+
+</ion-content>
