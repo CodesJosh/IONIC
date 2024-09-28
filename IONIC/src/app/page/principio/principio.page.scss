@@ -1,0 +1,50 @@
+.Icon{
+    width: 15%;
+    height: 15%;
+}
+.Fondo{
+  --background:linear-gradient(90deg,rgb(189, 195, 199)0%,rgb(144, 148, 151 )100%);
+}
+.centered-title {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+    flex-direction: row; /* Asegura que la imagen y el texto estén en fila */
+    
+  } 
+
+  ion-content {
+    display: flex;
+    flex-direction: column;
+    --background: linear-gradient(90deg, rgb(189, 195, 199) 0%, rgb(144, 148, 151) 100%);
+    .footer {
+      margin-top: auto; 
+      ion-toolbar {
+        --background: linear-gradient(90deg, rgb(189, 195, 199) 0%, rgb(144, 148, 151) 100%);
+        --color: #333; 
+        text-align: center; 
+      }
+      
+    }
+    .search-button {
+        --background: #333; /* Fondo gris oscuro */
+        --color: white; /* Color del texto */
+        --border-radius: 8px; /* Bordes redondeados */
+        padding: 10px 30px; /* Ajusta el padding para hacer el botón más ancho */
+        width: 100%; /* O un ancho específico */
+      
+        ion-icon {
+          margin-right: 10px; /* Espacio entre el ícono y el texto */
+        }
+      
+        &:hover {
+          --background: #555; /* Color de fondo al pasar el mouse */
+        }
+      
+        &:active {
+          --background: #444; /* Color de fondo al hacer clic */
+          --color: white; /* Color del texto al hacer clic */
+        }
+      }
+}

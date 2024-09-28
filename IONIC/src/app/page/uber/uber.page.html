@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Uber Style</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <h1>Solicita un viaje</h1>
+    <div class="location">
+      <ion-input placeholder="Tu ubicación actual"></ion-input>
+      <ion-input placeholder="Destino"></ion-input>
+    </div>
+    
+    <ion-button expand="full" color="primary">Solicitar viaje</ion-button>
+
+    <div class="ride-options">
+      <h2>Opciones de viaje</h2>
+      <ion-card *ngFor="let option of rideOptions">
+        <ion-card-header>
+          <ion-card-title>{{ option.type }}</ion-card-title>
+          <ion-card-subtitle>{{ option.price | currency }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Descripción: {{ option.description }}</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar class="Fondo">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"> </ion-back-button>
+      </ion-buttons>      
+      <ion-title class="centered-title" size="large"><img class="Icon" src="assets/img/Icon1.png">Viajes</ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+        <ion-button (click)="logout()">Logout</ion-button>
+      </ion-buttons>
+    </ion-toolbar>  
+
+  </ion-header>
+
+  <ion-button (click)="buscar()" class="search-button">
+    <ion-icon name="search"></ion-icon>
+    Buscar
+  </ion-button>
+</ion-content>
