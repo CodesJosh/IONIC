@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <img class="logo" src="assets/img/Duber.png" alt="LogoDuber">
+  </div>
+
+<ion-item class="Login">
+  <ion-input [(ngModel)]="email" label="Email: " type="email" placeholder=""></ion-input>
+</ion-item>
+<br>
+<ion-item class="Login">
+  <ion-input [(ngModel)]="password" type="password" label="Password" value="">
+    <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+  </ion-input>
+</ion-item>
+<div>
+  <br>
+<ion-button class="boton" (click)="login()" expand="block">Login</ion-button>
+</div>
+<ion-grid>
+  <ion-row>
+    
+    <ion-col>
+      <ion-button class="registro" size="small"  a [routerLink]="['/registrar']">Registrar</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button class="recuperar" size="small"  a [routerLink]="['/recuperar']">Recuperar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<ion-footer class="footer">
+  <ion-toolbar>
+    <ion-title>
+      © 2024 Duber--Joshua y Nicolas
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+</ion-content>
